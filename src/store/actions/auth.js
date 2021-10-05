@@ -1,6 +1,4 @@
-// import axios from 'axios';
 import { url, axios } from '../../utils';
-import { Redirect } from 'react-router-dom';
 
 export const authAction = (dispatch) => async () => {
   return await axios
@@ -20,7 +18,6 @@ export const authAction = (dispatch) => async () => {
           type: 'AUTH_SUCCESS',
           payload: true,
         });
-        <Redirect to='/home' />;
         return res.data;
       } catch (error) {
         dispatch({

@@ -12,13 +12,25 @@
     }
     .iconsAvatars {
       color: #7882a2;
-      // padding: 0;
       margin: 0;
     }
     .name {
+      background-color: #292d39;
+      border: none;
+    }
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
       color: #7882a2;
-      // padding: 0;
-      margin: 0;
+      font-size: 28px;
+    }
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      background-color: #292d39;
+      border: none;
+    }
+    .button {
+      display: flex;
+      grid-gap: 12px;
+      cursor: pointer;
     }
     .ant-badge {
       span {
