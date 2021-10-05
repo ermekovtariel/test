@@ -1,6 +1,12 @@
 {
   "banks": [
     {
+      "id": 1,
+      "amount": 200,
+      "bankId": 2,
+      "bankTitle": "optima bank"
+    },
+    {
       "id": 2,
       "amount": 200,
       "bankId": 2,
@@ -11,6 +17,12 @@
       "amount": 300,
       "bankId": 3,
       "bankTitle": "elsom bank"
+    },
+    {
+      "id": 4,
+      "amount": 500,
+      "bankId": 5,
+      "bankTitle": "etb bank"
     },
     {
       "id": 5,
@@ -26,14 +38,8 @@
     },
     {
       "id": 7,
-      "amount": 700,
-      "bankId": 7,
-      "bankTitle": "etb bank"
-    },
-    {
-      "id": 8,
-      "amount": 800,
-      "bankId": 8,
+      "amount": 600,
+      "bankId": 6,
       "bankTitle": "etb bank"
     }
   ]
