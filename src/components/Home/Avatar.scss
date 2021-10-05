@@ -1,0 +1,39 @@
+.avatar_icons {
+  display: flex;
+  font-size: 24px;
+  align-self: center;
+  div {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+    .icons {
+      color: #7882a2;
+      align-items: center;
+    }
+    .iconsAvatars {
+      color: #7882a2;
+      // padding: 0;
+      margin: 0;
+    }
+    .name {
+      color: #7882a2;
+      // padding: 0;
+      margin: 0;
+    }
+    .ant-badge {
+      span {
+        svg {
+          font-size: 24px;
+        }
+      }
+    }
+    .ant-avatar {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      .ant-avatar-icon {
+        font-size: 24px;
+      }
+    }
+  }
+}

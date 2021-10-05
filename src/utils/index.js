@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const url = 'https://social-network.samuraijs.com/api/1.0/';
 const instance = axios.create({});
-// const api = process.env.REACT_APP_BASE_URL;
+const api = 'http://localhost:3000/bd.json';
 const tokenTrue = 'Bearer_';
 
 instance.interceptors.request.use((config) => {
@@ -13,4 +13,4 @@ instance.interceptors.request.use((config) => {
 });
 
 export default instance;
-export { url };
+export { url, api };

@@ -8,6 +8,9 @@ export const authAction = (dispatch) => async () => {
       withCredentials: true,
     })
     .then((res) => {
+      localStorage.setItem('it-academy', JSON.stringify(res.data.data.userId));
+      const user = JSON.parse(localStorage.getItem('it-academy'));
+      user && window.location.reload();
       try {
         dispatch({
           type: 'AUTH',
@@ -32,6 +35,8 @@ export const authActionButton = (data) => async (dispatch) => {
   return await axios.post(`${url}auth/login`, data).then((res) => {
     try {
       localStorage.setItem('it-academy', JSON.stringify(res.data.data.userId));
+      const user = JSON.parse(localStorage.getItem('it-academy'));
+      user && window.location.reload();
       dispatch({
         type: 'AUTH',
         payload: res.data,

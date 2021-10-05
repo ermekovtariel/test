@@ -1,0 +1,12 @@
+{
+  "banks": [
+    { "id": 1, "amount": 100, "bankId": 1, "bankTitle": "etb bank" },
+    { "id": 2, "amount": 200, "bankId": 2, "bankTitle": "optima bank" },
+    { "id": 3, "amount": 300, "bankId": 3, "bankTitle": "elsom bank" },
+    { "id": 4, "amount": 400, "bankId": 4, "bankTitle": "ayil bank" },
+    { "id": 5, "amount": 500, "bankId": 5, "bankTitle": "etb bank" },
+    { "id": 6, "amount": 600, "bankId": 6, "bankTitle": "etb bank" },
+    { "id": 7, "amount": 700, "bankId": 7, "bankTitle": "etb bank" },
+    { "id": 8, "amount": 800, "bankId": 8, "bankTitle": "etb bank" }
+  ]
+}

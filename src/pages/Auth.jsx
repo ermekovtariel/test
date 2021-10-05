@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import { Avatar } from '../assets/svg';
 import '../styles/Auth.scss';
 import { authActionButton } from '../store/actions/auth';
 import { useDispatch } from 'react-redux';
@@ -21,7 +20,7 @@ function Auth() {
   return (
     <div>
       <div className='main'>
-        <Avatar />
+        <div style={{ fontSize: '48px' }}>ETB Bank</div>
         <div className='inputGroup inputGroup1'>
           <label htmlFor='email1'>Email</label>
           <input
@@ -49,17 +48,10 @@ function Auth() {
             }}
           />
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>
-          <div className='inputGroup inputGroup3 Registration'>
-            <button onClick={() => console.log('click')} id='Registration'>
-              Registration
-            </button>
-          </div>
-          <div className='inputGroup inputGroup3'>
-            <button type='submit' onClick={() => logHandler()}>
-              Log in
-            </button>
-          </div>
+        <div className='inputGroup inputGroup3'>
+          <button type='submit' onClick={() => logHandler()}>
+            Log in
+          </button>
         </div>
       </div>
     </div>
