@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { url } from '../../utils';
+// import axios from 'axios';
+import { url, axios } from '../../utils';
 import { Redirect } from 'react-router-dom';
 
 export const authAction = (dispatch) => async () => {

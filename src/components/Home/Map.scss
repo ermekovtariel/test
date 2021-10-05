@@ -31,4 +31,15 @@
       color: rgb(120, 130, 162);
     }
   }
+  .ant-pagination-disabled .ant-pagination-item-link,
+  .ant-pagination-disabled:hover .ant-pagination-item-link,
+  .ant-pagination-disabled:focus-visible .ant-pagination-item-link {
+    background: #181c28;
+    border: none;
+    color: rgb(120, 130, 162);
+  }
+  .ant-pagination-item-active a {
+    color: #fff;
+    background: #181c28;
+  }
 }

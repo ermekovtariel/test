@@ -1,17 +1,34 @@
 import React from 'react';
 import { Table, Button } from 'antd';
 import { DeleteOutlined } from '@ant-design/icons';
+import { useDispatch } from 'react-redux';
+
 import './Map.scss';
+import { deleteBankById } from '../../store/actions/bankAction';
 
 function Map({ data }) {
-  const dates = data?.banks?.map((item, idx) => ({
+  const dispatch = useDispatch();
+
+  function handleDelete(id) {
+    dispatch(deleteBankById(id));
+  }
+
+  const dates = data?.map((item, idx) => ({
     key: idx,
     id: item.id,
-    amount: item.amount,
+    amount: `${item.amount} сом`,
     bankId: item.bankId,
     bankTitle: item.bankTitle,
     button: (
-      <Button key={(item, idx)} onClick={() => console.log(item.id)}>
+      <Button
+        style={{
+          background: '#181c28',
+          color: 'rgb(120, 130, 162)',
+          border: 'none',
+        }}
+        key={(item, idx)}
+        onClick={() => handleDelete(item.id)}
+      >
         <DeleteOutlined />
       </Button>
     ),
