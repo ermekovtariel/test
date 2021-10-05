@@ -6,7 +6,7 @@ import './Avatar.scss';
 function AvatarComponent() {
   const { Option } = Select;
   const [yaer, setyaer] = useState('Акботой Керимов');
-  function rerender() {
+  function exit() {
     localStorage.clear();
     window.location.reload();
   }
@@ -22,7 +22,7 @@ function AvatarComponent() {
           <Select
             className='name'
             onChange={() => {
-              rerender();
+              exit();
               setyaer();
             }}
             value={yaer}

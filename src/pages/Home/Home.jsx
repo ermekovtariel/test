@@ -17,7 +17,6 @@ import '../Home/Home.scss';
 function Home(props) {
   const [visible, setVisible] = useState(false);
   let allCount = 0;
-  // console.log('props', props.data);
 
   const name = [
     {
